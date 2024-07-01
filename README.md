@@ -106,3 +106,65 @@ The growth accelerates significantly from around 2000 to 2007.
 
   7.*  What top 10 Zipcodes have the highest ROI?
   ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/5e8ac78d-0e8f-40e4-bf15-29fdeec4356b)
+
+  8. ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/f6a3434a-57ef-4110-b600-35ce3721734e)
+     
+- The cities with the highest ROI(return on investement) are;
+Sea Island,Glen Arbor,Zephyr Cove,Kilauea,Haiku,Shaver Lake,Sint Helena,Green port,Wainscott and Amagansett.<br>
+- This information is valuable for real estate investors, developers, and policymakers seeking to make informed decisions and capitalize on growth opportunities in the housing market.
+  
+  9. **Top 10 Cities with the highest Risk factor(CV)**
+  ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/305b8948-ecfe-4398-9d88-42a074dd7b28)
+
+  A high CV means that  the price deviates further from the mean and  that there is presence of high price volatility making it a problem to effectively predict their future median house prices.This means that real estate investors cannot invest in these areas.<br>
+The cities with the highest price volatility are:
+*   Hanska
+*   East Dublin
+*   Saint Helena
+*  Mineral City
+*   Yellow springs
+*  Axton
+*  Pedro
+* Martins Ferry
+*   Glen Arbor
+*  Spring Hill.
+
+10. ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/abb9dbf9-15ba-49b0-8b3c-61e2201aff02)
+    **observations:**
+
+The Average house prices  keep on increasing however the prices remain constant between 1996 and 2004
+
+11. Correlation analysis
+![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/25c58958-7eb4-457b-a122-c2516f694385)
+
+- The dataset does not exhibit multicollinearity
+  ### **Time Series Ananlysis**
+
+  - WE will focus on one zipcode  among the ones that have highest ROI in our TSA
+    - **Baseline Model**
+
+- We will use the ARIMA model as our baseline model.
+
+  ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/79f628e9-7f97-4814-b875-a069869a3655)
+- Forecast (Blue Line):
+The blue line represents the forecasted values.
+It appears relatively smooth, suggesting a model’s prediction over time.
+-Actual (Green Line):
+The green line represents the actual recorded values.
+It is highly volatile, with sharp peaks and troughs.
+-Problem in the Forecast:
+The forecast fails to accurately predict extreme variations seen in the actual data.
+At various points, the forecast underestimates or overestimates the actual values.
+This discrepancy indicates that the forecasting model may not handle the data’s volatility effectively.
+
+
+- SARIMA MODEL
+  
+- We saw that there is seasonality in the data, so the best model to use is one that also caters for seasonality-SARIMAX
+  ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/f756318a-d770-4b93-9724-48a4d77b6e9f)
+RMSE: 263342.52
+the model performe quited well in forcasting the actual values
+ - facebook prophet
+   ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/8564a462-da59-457c-a68d-c92e3c7ea2ca)
+ 
+
