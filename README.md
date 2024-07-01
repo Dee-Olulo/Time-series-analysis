@@ -1,4 +1,6 @@
 # **Business Understanding**
+![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/6cdd5e07-0e20-4826-ad15-10bbb01eb988)
+
 
 ## Problem Statement
 
@@ -26,6 +28,18 @@ The dataset contains 14,723 rows and 272 columns, with 4 categorical columns and
 - **CountyName**: Names of the counties.
 - **SizeRank**: Rank of zip codes by urbanization.
 - **Date Columns (265 Columns)**: Median house prices across the years.
+## Methods
+
+The project will follow the following steps:
+
+a. Exploratory Data Analysis: We will perform an in-depth exploration of the dataset to gain insights into the distribution of variables, identify patterns, and detect any data quality issues.
+
+b. Data Preprocessing: This step involves handling missing values, encoding categorical variables, and scaling numerical features.
+
+
+c. Time Series Modelling: Forcasting 
+
+d. Model Evaluation: We will assess the performance of the trained model using appropriate evaluation metrics such as RMSE and AIC.
 
   ### EDA
 1.
@@ -168,3 +182,58 @@ the model performe quited well in forcasting the actual values
    ![image](https://github.com/Dee-Olulo/Time-series-analysis/assets/151445934/8564a462-da59-457c-a68d-c92e3c7ea2ca)
  
 
+## **EVALUATION**
+- To the stakeholder, a real estate investment firm , the best investment would be the one that promises high return on investment. When constructing residential homes in the United States, they would much be interested in the zipcodes that would promise high ROI.
+
+- In this project the goal was to identify the top five zip codes with high ROI as well as forecasting future house prices in these zipcodes.
+The Return on Investment (ROI) for each row in the DataFrame was calculated by comparing the property value in April 2018 to the property value in April 1996.
+The calculated ROI therefore represents the percentage increase in the property value from April 1996 to April 2018. ROI of 2.083782 means the property value increased by 208.3782% over this period.
+
+The  top 5 zip codes with the highest ROI were observed as below:
+1. 10021
+2. 31561
+3. 10014
+4. 11217
+5. 96714 / 11231
+- The first two zip codes (10021 and 31561) were noted for having exceptionally high ROI.
+
+- SARIMA model was the best model due to seasonality in the data with an RMSE of 263342.52
+The model was able to capture the seasonality spikes when forecasting future prices in the top zipcodes.
+### **INSIGHTS AND RECOMMENDATIONS**
+
+
+**Focus on Top-Performing Zip Codes:**
+
+- 10021 (Upper East Side, Manhattan, NY):
+Known for its affluent residential area, high-end retail, and proximity to Central Park.
+Investing in this area is likely to yield high returns due to its sustained demand and prestigious reputation.
+- 31561 (Sea Island, GA):
+This area is known for luxury resorts, exclusive communities, and a high quality of life.
+Properties here are highly sought after for both vacation homes and permanent residences, ensuring a high ROI.
+
+**Consider High ROI for the other three Zip Codes:**
+
+- 10014 (West Village, Manhattan, NY):
+Known for its historic charm, vibrant cultural scene, and high property demand.
+The West Village has shown significant property value appreciation and continues to attract a wealthy demographic.
+- 11217 (Boerum Hill, Brooklyn, NY):
+This area has seen a surge in popularity due to its brownstone-lined streets, cultural amenities, and proximity to downtown Manhattan.
+The gentrification of Brooklyn makes this zip code a lucrative investment option.
+- 96714 (Hanalei, HI) / 11231 (Carroll Gardens, Brooklyn, NY):
+- 96714: Known for its picturesque landscape, tourism, and luxury real estate market.
+- 11231: Carroll Gardens is known for its historic homes, family-friendly atmosphere, and increasing property values.
+
+**Diversification:**
+
+- Diversify investments across the top zip codes to mitigate risk. While investing heavily in the top two zip codes, it is also beneficial to allocate some resources to the other identified high ROI areas to spread the risk and maximize potential gains.
+
+**Future Forecasting:**
+
+- Stay updated with local market trends, economic indicators, and changes in urban development policies that could affect property values.
+Invest in zip codes with strong economic fundamentals, good infrastructure, and amenities that attract buyers and renters.
+Sustainable Investment Strategy:
+
+- Consider the sustainability of high ROI. Look into factors such as local economy, employment rates and population growth to ensure that the identified zip codes will continue to provide high returns in the future.
+  ### **CONCLUSION**
+
+- Investing in the identified high ROI zip codes can provide substantial returns due to their historical performance and market desirability. Prioritizing investments in zip codes 10021 and 31561 while diversifying across the other high-performing areas will help the real estate investment firm maximize its returns while mitigating risks. Continuing to forecast and monitor market conditions will ensure that investments remain profitable in the long term.
